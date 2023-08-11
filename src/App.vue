@@ -1,26 +1,54 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+  <b-card no-body class="text-center">
+    <div class="bg-secondary text-light">
+      This is some content without the default <samp>&lt;b-card-body&gt;</samp> section. Notice the
+      lack of padding between the card's border and this gray <samp>&lt;div&gt;</samp>.
+    </div>
+  </b-card>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// import axios from 'axios'
+// import { onMounted, ref } from 'vue'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  //     setup() {
+  // //reactive state
+  // let posts = ref([])
+  // //mounted
+  // onMounted(() => {
+  //    //panggil function "getDataPosts"
+  //    getDataPosts()
+  // })
+  // //function "getDataPosts"
+  // function getDataPosts() {
+  //     //get API from Express Backend
+  //     axios.get('http://localhost:3000/api/posts')
+  //     .then(response => {
+  //       //assign state posts with response data
+  //       posts.value = response.data.data
+  //     }).catch(error => {
+  //         console.log(error.response.data)
+  //     })
+  // }
+  // //return
+  // return {
+  //     posts,
+  //     getDataPosts,
+  // }
+  // }
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+/* body {
+  background-color: lightgray !important;
 }
+.mt-custom {
+  margin-top: 110px;
+}
+.b {
+  fill: aqua;
+} */
 </style>
